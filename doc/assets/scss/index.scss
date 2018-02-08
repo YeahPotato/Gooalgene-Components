@@ -35,9 +35,13 @@ body{
             padding: 0 $headerpadding;
             box-sizing: border-box;
             box-shadow: 0 0 10px 1px #ddd;
+            background: orange;
             header{
                 max-width: $wrapwidth;
                 margin: 0 auto;
+                b{
+                    color: #fff;
+                }
             }
         }
         .container{
