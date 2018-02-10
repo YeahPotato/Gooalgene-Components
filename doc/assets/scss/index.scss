@@ -35,7 +35,7 @@ body{
             padding: 0 $headerpadding;
             box-sizing: border-box;
             box-shadow: 0 0 10px 1px #ddd;
-            background: orange;
+            background: $themcolor;
             header{
                 max-width: $wrapwidth;
                 margin: 0 auto;
@@ -62,7 +62,7 @@ body{
                     cursor: pointer;
                     transition: 0.3s;
                     &:hover{
-                        color: $texthover;
+                        color: $themcolor;
                     }
                 }
             }
@@ -71,6 +71,17 @@ body{
                 padding:$padding*2 $padding $padding*6;
                 background-color: #ffffff;
                 overflow-y: scroll;
+                h4{
+                    a{
+                        cursor: pointer;
+                        color: $themcolor;
+                        text-decoration: none;
+                        transition: .2s;
+                        &:hover{
+                            font-weight: bold;
+                        }
+                    }
+                }
             }
         }
         footer{
