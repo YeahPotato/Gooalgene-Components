@@ -7,7 +7,7 @@
         <div class="left">
           <p>更新日志</p>
           <p>Gooalgene Vue</p>
-          <GA-sidebar :data="title" @itemclick="itemclick"></GA-sidebar>
+          <ga-sidebar :data="title" @itemclick="itemclick"></ga-sidebar>
         </div>
         <div class="right">
           <component :is="component"></component>
