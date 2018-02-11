@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import Icon from '@view/zh/icon.md';
-import Alert from "@view/zh/alert.md";
+import Icon from "@view/zh/icon.md";
+import Button from "@view/zh/button.md";
 
 export default {
   name: "doc",
@@ -26,19 +26,16 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: [
-			"Icon",
-			"Alert"
-		]
+        组件: ["Icon", "Button"]
       }
     };
   },
-  methods:{
-	  itemclick(...args){
-		  this.component = args[0];
-	  }
+  methods: {
+    itemclick(...args) {
+      this.component = args[0];
+    }
   },
-  components: { Alert,Icon }
+  components: { Button, Icon }
 };
 </script>
 

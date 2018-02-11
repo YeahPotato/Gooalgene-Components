@@ -1,6 +1,6 @@
 <template>
     <button  class="ga-button" :class="['ga-button--'+type]">
-        提交
+        <span v-if="$slots.default"><slot></slot></span>
     </button>
 </template>
 
