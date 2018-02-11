@@ -32,15 +32,15 @@ button[class*="ga-button--"]:not(".is-plain"){
 }
 
 // plain hover
-button[class$="is-plain"][data-type]{
-    &:hover{
-        background-color: #{attr(data-type)};
-        border-color: #{attr(data-type)};
-    }
-    span{
-        color: $blank;
-    }
-}
+// button[class$="is-plain"][data-type]{
+//     &:hover{
+//         background-color: #{attr(data-type)};
+//         border-color: #{attr(data-type)};
+//     }
+//     span{
+//         color: $blank;
+//     }
+// }
 
 // color type
 .ga-button--default{
