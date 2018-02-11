@@ -1,5 +1,9 @@
 <template>
-    <button  class="ga-button" :class="['ga-button--'+type]">
+    <button  class="ga-button" :class="[
+      'ga-button--'+type,
+      plain?'is-plain':''
+      ]" 
+      :data-type="type">
         <span v-if="$slots.default"><slot></slot></span>
     </button>
 </template>
@@ -11,6 +15,10 @@ export default {
     type: {
       type: String,
       default: "default"
+    },
+    plain:{
+      type:Boolean,
+      default:false
     }
   }
 };

@@ -19,7 +19,7 @@
 
 <br><br>
 
-  ## **EXAMPLE**
+  #### **EXAMPLE**
 <br><br>
 
 <template>
@@ -28,13 +28,15 @@
     <ga-icon :size="3" type="check-circle-o"></ga-icon>
     <ga-icon :size="4" type="check-circle-o"></ga-icon>
     <ga-icon :size="5" type="check-circle-o"></ga-icon>
+    
 </template>
 
 
 <br><br>
 
+    
   ```html
-
+    
     <ga-icon :size="1" type="check-circle-o"></ga-icon>
     <ga-icon :size="2" type="check-circle-o"></ga-icon>
     <ga-icon :size="3" type="check-circle-o"></ga-icon>
@@ -42,6 +44,10 @@
     <ga-icon :size="5" type="check-circle-o"></ga-icon>
     
   ```
+
+
+
+
 <br>
 
 #### **tips**:1-5 可调节icon大小，icon的类参考font-awesome;
@@ -61,6 +67,7 @@
   export default {
     data () {
       return {
+        
         iconList:[
             'address-book',
             'check',
@@ -108,7 +115,8 @@
             'chrome'
         ]
       }
-    }
+    },
+    
   }
 </script>
 

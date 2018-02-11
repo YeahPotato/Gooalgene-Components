@@ -16,79 +16,98 @@
     border: 1px solid $bordercolor;
     transition: .3s;
     color: $textcolor;
-    &:hover{
-        opacity: .7;
-    }
+    // &:hover{
+    //     opacity: .7;
+    // }
     span{
         color: $textcolor;
     }
-    &.ga-button--default{
-        &:hover{
-            border: 1px solid $themcolor;
-            background-color: rgba($color: $themcolor, $alpha: 0.1);
-            span{
-                color: $themcolor;
-            }
-        }
-        span{
-            color: $blank;
-        }
-    }
-    &.ga-button--primary{
-        background-color: $primary;
-        border-color: $primary;
-        &:hover{
-            border: 1px solid $primary;
-            background-color: rgba($color: $primary, $alpha: 0.2);
-            span{
-                color: $primary;
-            }
-        }
-    }
-    &.ga-button--success{
-        background-color: $success;
-        border-color: $success;
-        &:hover{
-            border: 1px solid $success;
-            background-color: rgba($color: $success, $alpha: 0.2);
-            span{
-                color: $success;
-            }
-        }
-    }
-    &.ga-button--info{
-        background-color: $info;
-        border-color: $info;
-        &:hover{
-            border: 1px solid $info;
-            background-color: rgba($color: $info, $alpha: 0.2);
-            span{
-                color: $info;
-            }
-        }
-    }
-    &.ga-button--warning{
-        background-color: $warning;
-        border-color: $warning;
-        &:hover{
-            border: 1px solid $warning;
-            background-color: rgba($color: $warning, $alpha: 0.2);
-            span{
-                color: $warning;
-            }
-        }
-    }
-    &.ga-button--danger{
-        color: #fff;
-        background-color: $danger;
-        border-color: $danger;
-        &:hover{
-            border: 1px solid $danger;
-            background-color: rgba($color: $danger, $alpha: 0.2);
-            span{
-                color: $danger;
-            }
-        }
+}
+
+// 没有is-plain的按钮 默认opacity.7
+button[class*="ga-button--"]:not(".is-plain"){
+    &:hover{
+        opacity: .7;
     }
 }
 
+// plain hover
+button[class$="is-plain"][data-type]{
+    &:hover{
+        background-color: #{attr(data-type)};
+        border-color: #{attr(data-type)};
+    }
+    span{
+        color: $blank;
+    }
+}
+
+// color type
+.ga-button--default{
+    &:hover,&.is-plain{
+        border: 1px solid $themcolor;
+        background-color: rgba($color: $themcolor, $alpha: 0.1);
+        span{
+            color: $themcolor;
+        }
+    }
+    span{
+        color: $blank;
+    }
+}
+.ga-button--primary{
+    background-color: $primary;
+    border-color: $primary;
+    &:hover,&.is-plain{
+        border: 1px solid $primary;
+        background-color: rgba($color: $primary, $alpha: 0.2);
+        span{
+            color: $primary;
+        }
+    }
+}
+.ga-button--success{
+    background-color: $success;
+    border-color: $success;
+    &:hover,&.is-plain{
+        border: 1px solid $success;
+        background-color: rgba($color: $success, $alpha: 0.2);
+        span{
+            color: $success;
+        }
+    }
+}
+.ga-button--info{
+    background-color: $info;
+    border-color: $info;
+    &:hover,&.is-plain{
+        border: 1px solid $info;
+        background-color: rgba($color: $info, $alpha: 0.2);
+        span{
+            color: $info;
+        }
+    }
+}
+.ga-button--warning{
+    background-color: $warning;
+    border-color: $warning;
+    &:hover,&.is-plain{
+        border: 1px solid $warning;
+        background-color: rgba($color: $warning, $alpha: 0.2);
+        span{
+            color: $warning;
+        }
+    }
+}
+.ga-button--danger{
+    color: #fff;
+    background-color: $danger;
+    border-color: $danger;
+    &:hover,&.is-plain{
+        border: 1px solid $danger;
+        background-color: rgba($color: $danger, $alpha: 0.2);
+        span{
+            color: $danger;
+        }
+    }
+}

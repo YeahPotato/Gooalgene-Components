@@ -1,6 +1,7 @@
 import gaSidebar from './sidebar/index';
 import gaButton from './button/index';
 import gaIcon from './icon/index';
+import gaMore from './more/index';
 
 import './style/default.scss';
 
@@ -8,8 +9,8 @@ import './style/default.scss';
 const components = {
     gaSidebar,
     gaButton,
-    gaIcon
-    
+    gaIcon,
+    gaMore
 }
 
 const install = function (Vue, locale) {
@@ -24,4 +25,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 components.install = install
 
-export default components
+export default components;
