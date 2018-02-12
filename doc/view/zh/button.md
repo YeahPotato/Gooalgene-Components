@@ -1,11 +1,11 @@
 <template>
 
-  # Button 按钮 
-  <br> 
+# Button 按钮 
+<br> 
 
-  #### 常用的操作按钮
+#### 常用的操作按钮
 
-  <br><br>
+<br><br>
 
 #### **Type :**
 <br><br>
@@ -23,18 +23,16 @@
 
 <br><br>
 
-  ```html
-
-    <div>
-      <ga-button >成功按钮</ga-button>
-      <ga-button type="primary">主要按钮</ga-button>
-      <ga-button type="success">成功按钮</ga-button>
-      <ga-button type="info">信息按钮</ga-button>
-      <ga-button type="warning">警告按钮</ga-button>
-      <ga-button type="danger">危险按钮</ga-button>
-    </div>
-    
-  ```
+```html
+  <div>
+    <ga-button >成功按钮</ga-button>
+    <ga-button type="primary">主要按钮</ga-button>
+    <ga-button type="success">成功按钮</ga-button>
+    <ga-button type="info">信息按钮</ga-button>
+    <ga-button type="warning">警告按钮</ga-button>
+    <ga-button type="danger">危险按钮</ga-button>
+  </div>
+```
 <br><br>
 #### **Plain :**
 <br><br>
@@ -52,7 +50,6 @@
 <br><br>
 
   ```html
-
     <div>
       <ga-button plain >成功按钮</ga-button>
       <ga-button plain type="primary">主要按钮</ga-button>
@@ -61,20 +58,41 @@
       <ga-button plain type="warning">警告按钮</ga-button>
       <ga-button plain type="danger">危险按钮</ga-button>
     </div>
-    
   ```
 <br><br>
 
-
-#### **tips**:1-5 可调节icon大小，icon的类参考font-awesome;
+#### **Size :**
 <br><br>
+<template>
+    <div class="list">
+      <ga-button size="mini" type="primary">主要按钮</ga-button>
+      <ga-button size="small" type="success">成功按钮</ga-button>
+      <ga-button size="medium" type="info">信息按钮</ga-button>
+      <ga-button plain size="medium" type="danger">危险按钮</ga-button>
+    </div>
+</template>
+
+<br><br>
+
+  ```html
+    <div>
+      <ga-button size="mini" type="primary">主要按钮</ga-button>
+      <ga-button size="small" type="success">成功按钮</ga-button>
+      <ga-button size="medium" type="info">信息按钮</ga-button>
+      <ga-button plain size="medium" type="danger">危险按钮</ga-button>
+    </div>
+  ```
+<br><br>
+
 
   # 参数
   <br>
 
   | 参数          | 类型            |   默认值         |   说明   |
   |-------------  |---------------- |----------------  |-------- |
-  | type          | String     |    default         |   可选类型：primary, success, info, warning,danger|
+  | type          | String     |    default         |   `primary`, `success`, `info`, `warning,danger`|
+  | plain          | Boolean     |    false         |   `true/false` |
+  | size          | String     |    small         |   `mini`,`small`,`medium` |
 
 </template>
 
