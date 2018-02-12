@@ -91,7 +91,7 @@
 
   | 参数          | 类型            |   默认值         |   说明   |
   |-------------  |---------------- |----------------  |-------- |
-  | type          | String     |    default         |   `primary`, `success`, `info`, `warning,danger`|
+  | type          | String     |    default         |   `primary`, `success`, `info`, `warning`,`danger`|
   | plain          | Boolean     |    false         |   `true/false` |
   | size          | String     |    small         |   `mini`,`small`,`medium` |
 

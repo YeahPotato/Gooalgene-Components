@@ -26,13 +26,13 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: ["Icon", "Button"]
+        组件: ["Icon 图标", "Button 按钮"]
       }
     };
   },
   methods: {
     itemclick(...args) {
-      this.component = args[0];
+      this.component = (args[0].split(' '))[0];
     }
   },
   components: { Button, Icon }
