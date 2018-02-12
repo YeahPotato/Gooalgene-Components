@@ -1,6 +1,7 @@
 <template>
 
-  # Icon 图标 
+  >  Icon 按钮 
+
   <br> 
 
   #### 内置了 **[font-awesome_v4.7](http://fontawesome.dashgame.com/)**
@@ -19,8 +20,7 @@
 
 <br><br>
 
-  #### **EXAMPLE**
-<br><br>
+#### **Example**
 
 <template>
     <ga-icon :size="1" type="check-circle-o"></ga-icon>
@@ -36,13 +36,11 @@
 
     
   ```html
-    
     <ga-icon :size="1" type="check-circle-o"></ga-icon>
     <ga-icon :size="2" type="check-circle-o"></ga-icon>
     <ga-icon :size="3" type="check-circle-o"></ga-icon>
     <ga-icon :size="4" type="check-circle-o"></ga-icon>
     <ga-icon :size="5" type="check-circle-o"></ga-icon>
-    
   ```
 
 
