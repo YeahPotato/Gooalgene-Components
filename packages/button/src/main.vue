@@ -1,5 +1,5 @@
 <template>
-    <button  class="ga-button" :class="[
+    <button @click="handleClick"  class="ga-button" :class="[
       'ga-button--'+type,
       plain?'is-plain':'',
       'ga-button--size-'+size
@@ -24,6 +24,11 @@ export default {
     size:{
       type:String,
       default:"small"
+    }
+  },
+  methods:{
+    handleClick(ev){
+      this.$emit('click',ev)
     }
   }
 };
