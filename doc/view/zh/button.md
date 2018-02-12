@@ -94,6 +94,7 @@
   | type          | String     |    default         |   `primary`, `success`, `info`, `warning`,`danger`|
   | plain          | Boolean     |    false         |   `true/false` |
   | size          | String     |    small         |   `mini`,`small`,`medium` |
+  | click          | Event     |    -         |   按钮点击事件 |
 
 </template>
 
