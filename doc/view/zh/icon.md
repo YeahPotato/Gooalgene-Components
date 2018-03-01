@@ -1,54 +1,63 @@
 <template>
 
-  # Icon 图标
-  <br>
+  >  Icon 图标 
 
-  #### 内置了 font-awesome icon;
-  <br>
+  <br> 
+
+  #### 内置了 **[font-awesome_v4.7](http://fontawesome.dashgame.com/)**
+
+  <br><br>
 
 <template>
     <ul class="icon-list">
         <li v-for="(item,index) in iconList" class="item">
-            <GA-icon :size="2" :type="item"></GA-icon>
+            <ga-icon :size="2" :type="item"></ga-icon>
             <br>
             <p>{{item}}</p>
         </li>
     </ul>
 </template>
 
-  ## EXAMPLE
+<br><br>
+
+#### **Example**
 
 <template>
-    <GA-icon :size="1" type="check-circle-o"></GA-icon>
-    <GA-icon :size="2" type="check-circle-o"></GA-icon>
-    <GA-icon :size="3" type="check-circle-o"></GA-icon>
-    <GA-icon :size="4" type="check-circle-o"></GA-icon>
-    <GA-icon :size="5" type="check-circle-o"></GA-icon>
+    <ga-icon :size="1" type="check-circle-o"></ga-icon>
+    <ga-icon :size="2" type="check-circle-o"></ga-icon>
+    <ga-icon :size="3" type="check-circle-o"></ga-icon>
+    <ga-icon :size="4" type="check-circle-o"></ga-icon>
+    <ga-icon :size="5" type="check-circle-o"></ga-icon>
+    
 </template>
 
-<br>
+
+<br><br>
 
     
-#### 1-5 可调节icon大小，icon的类参考font-awesome;
-<br>
-
   ```html
-
-    <GA-icon :size="1" type="check-circle-o"></GA-icon>
-    <GA-icon :size="2" type="check-circle-o"></GA-icon>
-    <GA-icon :size="3" type="check-circle-o"></GA-icon>
-    <GA-icon :size="4" type="check-circle-o"></GA-icon>
-    <GA-icon :size="5" type="check-circle-o"></GA-icon>
-    
+    <ga-icon :size="1" type="check-circle-o"></ga-icon>
+    <ga-icon :size="2" type="check-circle-o"></ga-icon>
+    <ga-icon :size="3" type="check-circle-o"></ga-icon>
+    <ga-icon :size="4" type="check-circle-o"></ga-icon>
+    <ga-icon :size="5" type="check-circle-o"></ga-icon>
   ```
+
+
+
+
 <br>
+
+#### **tips**:1-5 可调节icon大小，icon的类参考font-awesome;
+<br><br>
 
   # 参数
   <br>
 
   | 参数          | 类型            |   默认值         |   说明   |
   |-------------  |---------------- |----------------  |-------- |
-  | type          | String     |    -         |   <code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code>    |
+  | size          | Number     |    1         |   <code>1</code> <code>2</code><code>3</code><code>4</code><code>5</code>    |
+  | type          | String     |    -         |   <code>caret-left</code> <code>check-circle-o</code>  |
 
 </template>
 
@@ -56,6 +65,7 @@
   export default {
     data () {
       return {
+        
         iconList:[
             'address-book',
             'check',
@@ -103,7 +113,8 @@
             'chrome'
         ]
       }
-    }
+    },
+    
   }
 </script>
 
@@ -120,9 +131,9 @@
                 color:#000;
                 line-height:1.8;
             }
-                    i{
-                        color:orange;
-                    }
+            i{
+                color:orange;
+            }
         }
     }
 </style>

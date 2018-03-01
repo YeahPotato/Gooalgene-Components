@@ -1,13 +1,21 @@
 import Vue from 'vue';
 import App from './App.vue';
 import './assets/scss/index.scss';
-import 'prismjs';
 
 import GooalgeneUI from '../packages/index';
+// import { gaSidebar , gaIcon,gaButton,gaMore } from '../packages/index';
+console.log(GooalgeneUI)
+// console.log(gaSidebar,gaButton,gaIcon,gaMore)
 
 import '../packages/style/default.scss';
-
-Vue.use(GooalgeneUI);
+// console.log(GooalgeneUI);
+// console.log(gaSidebar)
+// Vue.use(gaSidebar);
+// Vue.use(gaIcon);
+// Vue.use(gaButton);
+// Vue.use(gaMore);
+// Vue.use(gaSidebar);
+Vue.use(GooalgeneUI)
 
 new Vue({
   el: '#app',

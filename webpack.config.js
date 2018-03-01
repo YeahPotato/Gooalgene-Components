@@ -26,7 +26,7 @@ module.exports = {
         test: /\.md$/,
         loader: 'vue-markdown-loader',
         options: {
-          wrapper: "div",
+          wrapper: "section",
         }
       },
       {

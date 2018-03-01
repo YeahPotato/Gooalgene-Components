@@ -7,7 +7,7 @@
         <div class="left">
           <p>更新日志</p>
           <p>Gooalgene Vue</p>
-          <GA-sidebar :data="title" @itemclick="itemclick"></GA-sidebar>
+          <ga-sidebar :data="title" @itemclick="itemclick"></ga-sidebar>
         </div>
         <div class="right">
           <component :is="component"></component>
@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import Icon from '@view/zh/icon.md';
-import Alert from "@view/zh/alert.md";
+import Icon from "@view/zh/icon.md";
+import Button from "@view/zh/button.md";
 
 export default {
   name: "doc",
@@ -26,19 +26,16 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: [
-			"Icon",
-			"Alert"
-		]
+        组件: ["Icon 图标", "Button 按钮"]
       }
     };
   },
-  methods:{
-	  itemclick(...args){
-		  this.component = args[0];
-	  }
+  methods: {
+    itemclick(...args) {
+      this.component = (args[0].split(' '))[0];
+    }
   },
-  components: { Alert,Icon }
+  components: { Button, Icon }
 };
 </script>
 
