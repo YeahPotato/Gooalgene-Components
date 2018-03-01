@@ -19,6 +19,7 @@
 <script>
 import Icon from "@view/zh/icon.md";
 import Button from "@view/zh/button.md";
+import Radio from "@view/zh/radio.md";
 
 export default {
   name: "doc",
@@ -26,7 +27,7 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: ["Icon 图标", "Button 按钮"]
+        组件: ["Icon 图标", "Button 按钮","Radio "]
       }
     };
   },
@@ -35,7 +36,7 @@ export default {
       this.component = (args[0].split(' '))[0];
     }
   },
-  components: { Button, Icon }
+  components: { Button, Icon ,Radio }
 };
 </script>
 

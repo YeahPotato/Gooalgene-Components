@@ -1,0 +1,61 @@
+
+.ga-radio{
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    &.active{
+        .ga-radio_input{
+            border-color: $themcolor;
+            background-color: $themcolor;
+        }
+        .ga-radio_label{
+            color: $themcolor;
+        }
+    }
+    .ga-radio_input{
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        vertical-align: middle;
+        line-height: 1;
+        width: 1em;
+        height: 1em;
+        position: relative;
+        user-select: none;
+        font-size: inherit;
+        &:hover{
+            border-color: $themcolor;
+        }
+        
+        .ga-radio_input__inner{
+            position: absolute;
+            width: 0.5em;
+            height: 0.5em;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            margin-left: -0.25em;
+            margin-top: -0.25em;
+            background-color: $white;      
+        }
+        .ga-radio_input__original{
+            opacity: 0;
+            outline: none;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+        }
+    }
+    .ga-radio_label{
+        padding-left: 6px;
+        font-size: 14px;
+        line-height: 1;
+        vertical-align: middle;
+        user-select: none;
+    }
+}
+
