@@ -1,16 +1,16 @@
 
 
+<!-- <ga-radio v-model="radioData"  label="radio">单选框1</ga-radio> -->
 <template>
     <label class="ga-radio" 
-        :class="{'active':isActive}"
-        @click="handlerActive"
+        :class="{'is-active':isActive,'is-disabled':disabled}"
+        @click="handlerClick"
         >
         <span class="ga-radio_input">
             <span v-if="isActive" class="ga-radio_input__inner"></span>
         </span>
         <span class="ga-radio_label">
             <slot></slot>
-            <template v-if="!$slots.default">{{label}}</template>
         </span>
     </label>
 </template>
@@ -31,18 +31,25 @@ export default {
       type: Boolean,
       default: false
     },
-    active: {
-      type: Boolean,
-      default: false
+    value: {}
+  },
+  watch: {
+    isActive: function(newVal, oldVal) {
+      if (newVal) {
+        this.$emit("input", this.label);
+      }
+    },
+    value: function(newVal, oldVal) {
+      this.isActive = newVal === this.label;
     }
   },
   methods: {
-    handlerActive() {
-      this.isActive = !this.isActive;
+    handlerClick() {
+      if (!this.disabled) this.isActive = true;
     }
   },
-  mounted() {
-    this.isActive = this.active;
+  created() {
+    this.isActive = this.label == this.value;
   }
 };
 </script>

@@ -3,15 +3,29 @@
     font-size: 14px;
     line-height: 1;
     cursor: pointer;
-    &.active{
+    &.is-active{
         .ga-radio_input{
             border-color: $themcolor;
             background-color: $themcolor;
+            .ga-radio_input__inner{
+                transform: translate(-0.25em,-0.25em) scale(1);
+            }
         }
         .ga-radio_label{
             color: $themcolor;
         }
     }
+    &.is-disabled{
+        cursor: not-allowed;
+        .ga-radio_input{
+            border-color: $notallowed;
+            background-color: $notallowed;
+        }
+        .ga-radio_label{
+            color: $notallowed;
+        }
+    }
+
     .ga-radio_input{
         display: inline-block;
         border-radius: 50%;
@@ -34,15 +48,14 @@
             border-radius: 50%;
             left: 50%;
             top: 50%;
-            margin-left: -0.25em;
-            margin-top: -0.25em;
+            transition: transform .15s cubic-bezier(.71,-.46,.88,.6);
             background-color: $white;      
         }
         .ga-radio_input__original{
             opacity: 0;
             outline: none;
             position: absolute;
-            z-index: -1;
+            z-index: -2;
             top: 0;
             left: 0;
             right: 0;

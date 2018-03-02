@@ -15,16 +15,16 @@
 <br><br>
 
 <template>
-    <ga-radio :active="true" label="radio"></ga-radio>
-    <ga-radio :active="false">单选框</ga-radio>
+    <ga-radio v-model="radioData" label="radio1">单选框1</ga-radio>
+    <ga-radio v-model="radioData" label="radio2">单选框2</ga-radio>
 </template>
 
 <br><br>
 
 ```html
   <div>
-    <ga-radio :active="true" label="radio"></ga-radio>
-    <ga-radio :active="false">单选框</ga-radio>
+    <ga-radio v-model="radioData"  label="radio1">单选框1</ga-radio>
+    <ga-radio v-model="radioData" label="radio2">单选框2</ga-radio>
   </div>
 ```
 
@@ -36,10 +36,9 @@
 
   | 参数          | 类型            |   默认值         |   说明   |
   |-------------  |---------------- |----------------  |-------- |
-  | type          | String     |    default         |   `primary`, `success`, `info`, `warning`,`danger`|
-  | plain          | Boolean     |    false         |   `true/false` |
+  | label          | String     |    default         |   `primary`, `success`, `info`, `warning`,`danger`|
+  | disabled          | Boolean     |    false         |   `true/false` |
   | size          | String     |    small         |   `mini`,`small`,`medium` |
-  | click          | Event     |    -         |   按钮点击事件 |
 
 </template>
 
@@ -47,13 +46,13 @@
   export default {
     data () {
       return {
-          radioData:null,
+          radioData:'radio1',
       }
     },
-    mounted(){
-        this.$on('input',(val)=>{
-            this.radioData = val;
-        })
+    watch:{
+      radioData:function(newVal,oldVal){
+        console.log(newVal)
+      }
     },
     update(){
         console.log(this.radioData);
