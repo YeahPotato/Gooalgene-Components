@@ -12,25 +12,7 @@
     font-family: "Roboto Mono";
     src: local("Roboto Mono"), url("fonts/RobotoMono-Regular.ttf");
 }
-section blockquote{
-    display: block;
-    padding: 0px 12px;
-    position: relative;
-    background-color: rgba(255,165,0,.1)
-}
-section blockquote::after{
-    content:"";
-    width: 6px;
-    height: 100%;
-    background-color: orange;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-section blockquote p{
-    font-size: 20px;
-    line-height: 2;
-}
+
 code[class*="language-"],
  pre[class*="language-"] {
      padding:8px 0;

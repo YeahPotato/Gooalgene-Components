@@ -118,22 +118,3 @@
   }
 </script>
 
-<style scoped lang="scss">
-    .icon-list{
-        display:flex;
-        flex-wrap: wrap;
-        li{
-            width:110px;
-            text-align:center; 
-            padding:20px 0;
-            p{
-                font-size:14px;
-                color:#000;
-                line-height:1.8;
-            }
-            i{
-                color:orange;
-            }
-        }
-    }
-</style>
