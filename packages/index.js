@@ -3,6 +3,7 @@ import gaButton from './button/index';
 import gaIcon from './icon/index';
 import gaMore from './more/index';
 import gaRadio from './radio/index';
+import gaRadioGroup from './radio-group/index';
 
 import './style/default.scss';
 
@@ -12,7 +13,8 @@ const components = {
     gaButton,
     gaIcon,
     gaMore,
-    gaRadio
+    gaRadio,
+    gaRadioGroup
 }
 
 const install = function (Vue, locale) {
