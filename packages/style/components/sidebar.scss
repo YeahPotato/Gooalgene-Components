@@ -47,6 +47,13 @@
                     span{
                         transition: .2s;
                     }
+                    &.active{
+                        span{
+                            // font-weight: bold;
+                            color: $themcolor;
+                        }
+                        background-color: $white;
+                    }
                     &:hover{
                         background-color: $themcolor;
                     }
