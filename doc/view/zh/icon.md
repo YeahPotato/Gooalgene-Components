@@ -6,7 +6,7 @@
 
   #### 内置了 **[font-awesome_v4.7](http://fontawesome.dashgame.com/)**
 
-  <br><br>
+  <br>
 
 <template>
     <ul class="icon-list">
@@ -18,10 +18,12 @@
     </ul>
 </template>
 
-<br><br>
+<br>
+<br>
+<br>
 
 #### **Example**
-
+<br>
 <template>
     <ga-icon :size="1" type="check-circle-o"></ga-icon>
     <ga-icon :size="2" type="check-circle-o"></ga-icon>
@@ -32,7 +34,9 @@
 </template>
 
 
-<br><br>
+<br>
+<br>
+
 
     
   ```html
@@ -49,7 +53,10 @@
 <br>
 
 #### **tips**:1-5 可调节icon大小，icon的类参考font-awesome;
-<br><br>
+<br>
+<br>
+<br>
+
 
   # 参数
   <br>

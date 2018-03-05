@@ -6,10 +6,12 @@
 
 #### 常用的操作按钮
 
-<br><br>
+<br>
 
-#### **Type :**
-<br><br>
+
+### **Type :**
+
+<br>
 
 <template>
     <div class="list">
@@ -22,7 +24,7 @@
     </div>
 </template>
 
-<br><br>
+<br>
 
 ```html
   <div>
@@ -34,9 +36,13 @@
     <ga-button type="danger">危险按钮</ga-button>
   </div>
 ```
-<br><br>
-#### **Plain :**
-<br><br>
+<br>
+<br>
+<br>
+
+### **Plain :**
+
+<br>
 <template>
     <div class="list">
       <ga-button plain >成功按钮</ga-button>
@@ -48,7 +54,7 @@
     </div>
 </template>
 
-<br><br>
+<br>
 
   ```html
     <div>
@@ -60,10 +66,13 @@
       <ga-button plain type="danger">危险按钮</ga-button>
     </div>
   ```
-<br><br>
+<br>
+<br>
+<br>
 
-#### **Size :**
-<br><br>
+### **Size :**
+
+<br>
 <template>
     <div class="list">
       <ga-button size="mini" type="primary">主要按钮</ga-button>
@@ -73,7 +82,7 @@
     </div>
 </template>
 
-<br><br>
+<br>
 
   ```html
     <div>
@@ -83,8 +92,9 @@
       <ga-button plain size="medium" type="danger">危险按钮</ga-button>
     </div>
   ```
-<br><br>
-
+<br>
+<br>
+<br>
 
   # 参数
   <br>
@@ -95,6 +105,18 @@
   | plain          | Boolean     |    false         |   `true/false` |
   | size          | String     |    small         |   `mini`,`small`,`medium` |
   | click          | Event     |    -         |   按钮点击事件 |
+
+  <br>
+  <br>
+  <br>
+
+  # Event
+  <br>
+
+  | 事件名称          | 说明            |   回调函数        
+  |-------------  |---------------- |----------------  
+  | click          | -     |   - |
+
 
 </template>
 
