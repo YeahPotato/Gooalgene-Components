@@ -10,7 +10,9 @@
           <ga-sidebar :data="title" @itemclick="itemclick"></ga-sidebar>
         </div>
         <div class="right">
-          <component :is="component"></component>
+          <transition name="fade" :appear="true">
+            <router-view></router-view>
+          </transition>
         </div>
       </div>
   </div>
@@ -27,16 +29,17 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: ["Icon 图标", "Button 按钮","Radio 单选框"]
+        组件: ["Icon 图标", "Button 按钮", "Radio 单选框"]
       }
     };
   },
   methods: {
     itemclick(...args) {
-      this.component = (args[0].split(' '))[0];
+      this.component = args[0].split(" ")[0];
+      this.$router.push(this.component.toLowerCase())
     }
   },
-  components: { Button, Icon ,Radio }
+  components: { Button, Icon, Radio }
 };
 </script>
 
