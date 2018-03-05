@@ -4,9 +4,12 @@
             <li v-for="(item,key) in data" :key="key" @click="expand">
                 <p><span>{{key}}</span><GA-icon type="angle-down"></GA-icon></p>
                 <ol v-if="item.length">
-                    <li @click="handlerItemClick(a,index)" v-for="(a,index) in item" :key="index">
+                    <router-link  tag="li" :to="a.split(' ')[0]" exact  v-for="(a,index) in item" :key="index" >
                         <span>{{a}}</span>
-                    </li>
+                    </router-link>
+                    <!-- <li :class="[activeIndex===index?'active':'']" @click="handlerItemClick(a,index)" v-for="(a,index) in item" :key="index">
+                        <span>{{a}}</span>
+                    </li> -->
                 </ol>
                 <ol v-if="!item.length">
                   <li class="no-data">{{tips}}</li>
@@ -22,7 +25,7 @@ export default {
   name: "GASidebar",
   data(){
     return{
-
+      activeIndex:0
     }
   },
   components:{GAIcon},
@@ -47,6 +50,7 @@ export default {
     handlerItemClick(a,i){
       // arguments => item index 
       this.$emit('itemclick',a,i);
+      this.activeIndex = i;
     }
   },
   created(){
