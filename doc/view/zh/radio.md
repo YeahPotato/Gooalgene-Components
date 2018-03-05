@@ -4,13 +4,17 @@
 
   <br> 
 
-##### 由于选项默认可见，不宜过多，若选项过多，建议使用 Select 选择器。
+##### 在一组备选项中进行单选
 
 <br>
 <br>
 <br>
   
-### **基础用法:**
+### **基础用法**
+
+<br>
+
+由于选项默认可见，不宜过多，若选项过多，建议使用 Select 选择器。
 
 <br>
 <br>
@@ -67,20 +71,51 @@
 <br>
 <br>
 
-  # 参数
+### **禁用状态**
+
+<br>
+
+单选框不可用的状态。只要在`ga-radio`元素中设置`disabled`属性即可，它接受一个`Boolean`，`true`为禁用。
+
+<br>
+<br>
+
+<template>
+  <ga-radio-group @change="labelChange" v-model="radioGroup2">
+    <ga-radio disabled label="禁用状态">禁用状态</ga-radio>
+    <ga-radio label="可用状态">可用状态</ga-radio>
+  </ga-radio-group>
+</template>
+
+<br>
+<br>
+
+```html
+  <template>
+    <ga-radio-group @change="labelChange" v-model="radioGroup2">
+      <ga-radio disabled label="禁用状态">禁用状态</ga-radio>
+      <ga-radio label="可用状态">可用状态</ga-radio>
+    </ga-radio-group>
+</template>
+```
+<br>
+<br>
+<br>
+
+  # Radio Attributes
   <br>
 
-  | 参数          | 类型            |   默认值         |   说明   |
-  |-------------  |---------------- |----------------  |-------- |
-  | label          | String     |    default         |   `primary`, `success`, `info`, `warning`,`danger`|
-  | disabled          | Boolean     |    false         |   `true/false` |
-  | size          | String     |    small         |   `mini`,`small`,`medium` |
+  | 参数          | 说明            |   类型         |   可选值   | 默认值 |
+  |-------------  |---------------- |----------------  |-------- | -------- |
+  | label          | Radio 的 value | String / Number / Boolean | — | — |
+  | disabled     | 是否禁用     | Boolean | true / false |   — |
+  | size         | Radio 的尺寸 | String | medium / small / mini   |  — |
 
   <br>
   <br>
   <br>
 
-  # Event
+  # Radio-group Events
   <br>
 
   | 事件名称          | 说明            |   回调函数         
@@ -96,7 +131,8 @@
     data () {
       return {
           radioData:'radio1',
-          radioGroup:"radio-group1"
+          radioGroup:"radio-group1",
+          radioGroup2:"禁用状态"
       }
     },
     methods:{

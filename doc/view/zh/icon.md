@@ -4,7 +4,7 @@
 
   <br> 
 
-  #### 内置了 **[font-awesome_v4.7](http://fontawesome.dashgame.com/)**
+  ##### 使用了 `font-awesome` , 更多图标请 [查看](http://fontawesome.dashgame.com/)
 
   <br>
 
@@ -23,7 +23,14 @@
 <br>
 
 #### **Example**
+
 <br>
+
+1 - 5 可调节icon大小，icon的类参考 [font-awesome](http://fontawesome.dashgame.com/);
+
+<br>
+<br>
+
 <template>
     <ga-icon :size="1" type="check-circle-o"></ga-icon>
     <ga-icon :size="2" type="check-circle-o"></ga-icon>
@@ -52,20 +59,20 @@
 
 <br>
 
-#### **tips**:1-5 可调节icon大小，icon的类参考font-awesome;
+
 <br>
 <br>
 <br>
 
-
-  # 参数
+  # Attributes
   <br>
 
-  | 参数          | 类型            |   默认值         |   说明   |
-  |-------------  |---------------- |----------------  |-------- |
-  | size          | Number     |    1         |   <code>1</code> <code>2</code><code>3</code><code>4</code><code>5</code>    |
-  | type          | String     |    -         |   <code>caret-left</code> <code>check-circle-o</code>  |
+  | 参数          | 说明            |   类型         |   可选值   | 默认值 |
+  |-------------  |---------------- |----------------  |-------- | -------- |
+  | size          | icon的大小 | Number | 1 / 2 / 3 / 4 / 5 / | 1 |
+  | type          | icon类型，参考     <code>[font-awesome_v4.7](http://fontawesome.dashgame.com/)</code>           | String | — |   — |
 
+  
 </template>
 
 <script>

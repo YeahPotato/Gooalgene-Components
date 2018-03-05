@@ -96,26 +96,25 @@
 <br>
 <br>
 
-  # 参数
+  # Attributes
   <br>
 
-  | 参数          | 类型            |   默认值         |   说明   |
-  |-------------  |---------------- |----------------  |-------- |
-  | type          | String     |    default         |   `primary`, `success`, `info`, `warning`,`danger`|
-  | plain          | Boolean     |    false         |   `true/false` |
-  | size          | String     |    small         |   `mini`,`small`,`medium` |
-  | click          | Event     |    -         |   按钮点击事件 |
+  | 参数          | 说明            |   类型         |   可选值   | 默认值 |
+  |-------------  |---------------- |----------------  |-------- | -------- |
+  | type          | 按钮的颜色类型 | String |default / primary / success / info / warning /danger | default |
+  | plain         |  — |    Boolean | true / false | false |
+  | size          | 按钮的大小 | String | mini / small / medium  | small |
 
   <br>
   <br>
   <br>
 
-  # Event
+  # Events
   <br>
 
   | 事件名称          | 说明            |   回调函数        
   |-------------  |---------------- |----------------  
-  | click          | -     |   - |
+  | click          | 按钮的点击事件     |   — |
 
 
 </template>

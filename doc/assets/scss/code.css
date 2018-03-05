@@ -306,7 +306,7 @@ background-color: #d1d1d1;
 }
  
 
- p code,td code{
+ p code,td code,code a{
     font-family: "Roboto Mono";
     font-size: 0.8em;
     background-color: #f8f8f8;
