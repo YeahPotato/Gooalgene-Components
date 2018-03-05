@@ -15,11 +15,23 @@
             color: $themcolor;
         }
     }
+    &.is-active.is-disabled{
+        .ga-radio_input{
+            background-color: $notallowed;
+            border-color: $notallowed;
+            .ga-radio_input__inner{
+                background-color: $white;
+            }
+        }
+        .ga-radio_label{
+            color: $notallowed;
+        }
+    }
     &.is-disabled{
         cursor: not-allowed;
         .ga-radio_input{
             border-color: $notallowed;
-            background-color: $notallowed;
+            background-color: none;
         }
         .ga-radio_label{
             color: $notallowed;
