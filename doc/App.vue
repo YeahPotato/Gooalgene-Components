@@ -27,7 +27,7 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: ["Icon 图标", "Button 按钮","Radio "]
+        组件: ["Icon 图标", "Button 按钮","Radio 单选框"]
       }
     };
   },
