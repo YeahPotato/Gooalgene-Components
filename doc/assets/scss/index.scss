@@ -15,7 +15,8 @@ body,html{
     overflow-x: hidden;
 }
 body{
-    font-family: "Source Sans Pro Light", "Helvetica Neue", Arial, sans-serif;
+    //"Source Sans Pro Light",
+    font-family:  "Helvetica Neue", Arial, sans-serif;
     padding: 0 $bodypadding;
     padding-top:$bodypadding;
     background-color: $bodybg;
@@ -40,6 +41,13 @@ body{
     section blockquote p{
         font-size: 20px;
         line-height: 2;
+    }
+    section>P{
+        padding: 12px;
+        border-radius: 8px;
+        line-height: 1.6;
+        font-size: 14px;
+        background-color: rgba($themcolor,0.1);
     }
     #doc{
         height: 100%;
