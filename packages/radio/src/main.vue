@@ -35,7 +35,6 @@ export default {
 
   computed: {
     isActive() {
-      if (this.disabled) return;
       if (this.isGroup) {
         return this.label === this.groupVal;
       } else {
@@ -45,9 +44,7 @@ export default {
   },
 
   props: {
-    label: {
-      type: String
-    },
+    label: {},
     disabled: {
       type: Boolean,
       default: false
@@ -64,6 +61,7 @@ export default {
   methods: {
     handlerClick() {
       // no group
+      if (this.disabled) return;
       if (!this.isGroup) {
         this.$emit("input", this.label);
       } else {
