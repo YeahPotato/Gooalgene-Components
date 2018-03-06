@@ -29,14 +29,19 @@ export default {
     return {
       component: "Icon",
       title: {
-        组件: ["Icon 图标", "Button 按钮", "Radio 单选框"]
+        组件: [
+          "Icon 图标", 
+          "Button 按钮", 
+          "Radio 单选框",
+          "Checkbox 多选框"
+        ]
       }
     };
   },
   methods: {
     itemclick(...args) {
       this.component = args[0].split(" ")[0];
-      this.$router.push(this.component.toLowerCase())
+      this.$router.push(this.component.toLowerCase());
     }
   },
   components: { Button, Icon, Radio }

@@ -4,6 +4,8 @@ import gaIcon from './icon/index';
 import gaMore from './more/index';
 import gaRadio from './radio/index';
 import gaRadioGroup from './radio-group/index';
+import gaCheckbox from './checkbox/index';
+import gaCheckboxGroup from './checkbox-group/index';
 
 import './style/default.scss';
 
@@ -14,7 +16,9 @@ const components = {
     gaIcon,
     gaMore,
     gaRadio,
-    gaRadioGroup
+    gaRadioGroup,
+    gaCheckbox,
+    gaCheckboxGroup
 }
 
 const install = function (Vue, locale) {
