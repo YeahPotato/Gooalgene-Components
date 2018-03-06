@@ -69,7 +69,7 @@ code.language-html::after{
     transform: none;
     content:"HTML";
 }
-code.language-jsvascript::after{
+code.language-javascript::after{
     content:"JS";
     color: black;
     background-color: #CFCFCF;
