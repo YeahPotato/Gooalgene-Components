@@ -3,6 +3,16 @@
     font-size: 14px;
     line-height: 1;
     cursor: pointer;
+    &:not(.is-disabled):hover{
+        border-color: $themcolor;
+        .ga-radio_label{
+            color: $themcolor;
+        }
+        .ga-radio_input{
+            border-color: $themcolor;
+        }
+    }
+    
     &.is-active{
         .ga-radio_input{
             border-color: $themcolor;
@@ -49,9 +59,6 @@
         position: relative;
         user-select: none;
         font-size: inherit;
-        &:not('is-disabled'):hover{
-            border-color: $themcolor;
-        }
         
         .ga-radio_input__inner{
             position: absolute;
