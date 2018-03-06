@@ -12,3 +12,10 @@ $danger:#f56c6c;
 $default:#fff;
 
 $notallowed:#ccc;
+
+
+// function transition
+$time:0.3s;
+@function trans(){
+    @return $time all ease;
+}

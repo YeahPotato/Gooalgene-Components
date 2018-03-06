@@ -1,0 +1,84 @@
+// checkbox styles
+
+.ga-checkbox{
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    &:not(.is-disabled):hover{
+        .ga-checkbox-label{
+            color: $themcolor;
+        }
+        .ga-checkbox-input{
+            border-color: $themcolor;
+        }
+    }
+    &.is-disabled{
+        cursor: not-allowed;
+        .ga-checkbox-input{
+            background-color: rgba($color: $notallowed, $alpha: 0.1);
+        }
+        .ga-checkbox-label{
+            color: $notallowed;
+        }
+    }
+    &.is-active{
+        .ga-checkbox-input{
+            position: relative;
+            background-color: $themcolor;
+            border-color: $themcolor;
+        }
+        .ga-checkbox-label{
+            color: $themcolor;
+        }
+        .ga-checkbox-input__inner{
+            position: absolute;
+            width: 10px;
+            height: 6px;
+            transform-origin: center;
+            transform: rotate(-45deg);
+            border:2px solid $white;
+            border-right: 0;
+            border-top: 0;
+            top:1px;
+            left: 1px;
+            opacity: 1;
+        }
+    }
+    &.is-active.is-disabled{
+        cursor: not-allowed;
+        .ga-checkbox-input{
+            background-color: rgba($color: $notallowed, $alpha: 0.1);
+            border-color: $bordercolor;
+            .ga-checkbox-input__inner{
+                border-color: rgba($color: $notallowed, $alpha: 1);
+            }
+        }
+        .ga-checkbox-label{
+            color: $notallowed;
+        }
+    }
+    .ga-checkbox-input{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border:1px solid $bordercolor;
+        border-radius: 3px;
+        background-color: $white;
+        vertical-align: middle;
+        transition:.3s all ease;
+    }
+    .ga-checkbox-input__inner{
+        transition: trans();
+        opacity: 0;
+    }
+    .ga-checkbox-label{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1;
+        vertical-align: middle;
+        padding-left: 4px;
+        transition:trans();
+    }
+}
