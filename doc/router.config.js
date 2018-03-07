@@ -3,7 +3,7 @@ const Button = r => require.ensure([], () => r(require('./view/zh/button.md')), 
 const Radio = r => require.ensure([], () => r(require('./view/zh/radio.md')), 'radio')
 const Checkbox = r => require.ensure([], () => r(require('./view/zh/checkbox.md')), 'checkbox')
 
-const baseUrl = 'gaComponents';
+const baseUrl = 'ga-components';
 const language = 'zh';
 const url = `/${baseUrl}/${language}`;
 
