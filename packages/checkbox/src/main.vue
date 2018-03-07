@@ -72,7 +72,6 @@ export default {
   mounted() {
     if (this.$parent.$options.name === "GACheckboxGroup") {
       this.$on("boradcastCheckboxItem", (val, index) => {
-        console.log(index);
         if (this.label === val) {
           this.index = index;
           this.innerActive = true;
