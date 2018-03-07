@@ -95,7 +95,7 @@
 <br>
 
 <template>
-  <ga-checkbox-group v-model="checkboxgrouplist">
+  <ga-checkbox-group @change="change" v-model="checkboxgrouplist">
     <ga-checkbox class="ga-checkboxitem" label="checkbox1"></ga-checkbox>
     <ga-checkbox class="ga-checkboxitem" label="checkbox2" disabled></ga-checkbox>
     <ga-checkbox class="ga-checkboxitem" label="checkbox3"></ga-checkbox>
@@ -128,25 +128,25 @@
 <br>
 <br>
 
-  # Radio Attributes
+  # Checkbox Attributes
   <br>
 
   | 参数          | 说明            |   类型         |   可选值   | 默认值 |
   |-------------  |---------------- |----------------  |-------- | -------- |
-  | label          | Radio 的 value | String / Number / Boolean | — | — |
+  | value          | Checkbox 的 value | Boolean | true / false | false |
   | disabled     | 是否禁用     | Boolean | true / false |   — |
-  | size         | Radio 的尺寸 | String | medium / small / mini   |  — |
+  | label        | 使用<code>ga-checkbox-group</code>时的<code>checkbox</code>的<code>label</code>值，单独使用<code>ga-checkbox</code>时<code>label</code>用插槽代替 | String | medium / small / mini   |  — |
 
   <br>
   <br>
   <br>
 
-  # Radio-group Events
+  # Checkbox-group Events
   <br>
 
   | 事件名称          | 说明            |   回调函数         
   |-------------  |---------------- |----------------  
-  | change          | 绑定值变化时触发的事件     |    选中的 Radio label 值         
+  | change          | 绑定值变化时触发的事件     |    选中的 Checkbox label 值         
 
 
 
@@ -166,7 +166,7 @@
       }
     },
     methods:{
-      labelChange(val){
+      change(val){
         console.log(val)
       }
     }

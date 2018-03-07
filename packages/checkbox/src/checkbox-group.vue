@@ -20,6 +20,14 @@ export default {
       type: Array
     }
   },
+  watch: {
+    value: {
+      handler: function(newVal, oldVal) {
+        this.$emit("change", newVal);
+      },
+      deep: true
+    }
+  },
   methods: {
     broad() {
       this.arr.forEach((val, index) => {
