@@ -33,7 +33,9 @@ export default {
           "Icon 图标", 
           "Button 按钮", 
           "Radio 单选框",
-          "Checkbox 多选框"
+          "Checkbox 多选框",
+          "Input 输入框",
+          "Textarea 文本域"
         ]
       }
     };
