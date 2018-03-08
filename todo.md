@@ -7,8 +7,9 @@ Typography 字体
 ~~Button 按钮~~  
 ##### Form
 ~~Radio 单选框~~  
-Checkbox 多选框   
-Input 输入框    
+~~Checkbox 多选框~~
+~~Input 输入框~~
+~~Textarea 文本域~~    
 InputNumber 计数器    
 Select 选择器    
 Cascader 级联选择器    
