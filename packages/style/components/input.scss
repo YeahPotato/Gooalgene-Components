@@ -1,0 +1,132 @@
+// input components styles
+
+.ga-input{
+    display: inline-block;
+    position: relative;
+    &.ga-input__mini{
+        height: 26px;
+        line-height: 26px;
+        font-size: $minift;
+    }
+    &.ga-input__small{
+        height: 30px;
+        line-height: 30px;
+        font-size: $smallft;
+    }
+    &.ga-input__medium{
+        height: 34px;
+        line-height: 34px;
+        font-size: $mediumft;
+    }
+   
+    &:hover:not(.is-disabled){
+        .ga-input__label{
+            input{
+                border-color: $bordercolor;
+            }
+        }
+    }
+    &.is-disabled{
+        .ga-input__label{
+            color: #ccc;
+            input{
+                cursor: not-allowed;
+                border-color: $notallowed;
+                background-color: rgba($color: $notallowed, $alpha:0.1);
+                color: $notallowed;
+            }
+        }
+    }
+    &.is-pre{
+        .ga-input--pre__icon{
+            position: absolute;
+            top: 0px;
+            left: $inputlrpadding/2;
+            font-size: inherit;
+            i{
+                color: $iconcolor;
+                cursor: pointer;
+                opacity: .8;
+                font-size: inherit;
+                &:hover{
+                    opacity: 1.0;
+                }
+            }
+        }
+        .ga-input__inner{
+            padding-left: ($inputlrpadding + $mediumft);
+        }
+    }
+    &.is-append{
+        .ga-input--append__icon{
+            position: absolute;
+            top: 0px;
+            right: $inputlrpadding/2;
+            font-size: inherit;
+            i{
+                color: $iconcolor;
+                cursor: pointer;
+                opacity: .8;
+                font-size: inherit;
+                &:hover{
+                    opacity: 1.0;
+                }
+            }
+        }
+        .ga-input__inner{
+            padding-right: ($inputlrpadding + $mediumft);
+        }
+    }
+    
+    .ga-input__label{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        &.is-clearable{
+            input{
+                padding-right:20px;
+            }
+        }
+        &.is-clearable{
+            input{
+                padding-right:20px;
+            }
+        }
+        &.is-clearable{
+            input{
+                padding-right:20px;
+            }
+        }
+        input{
+            padding: 0 $inputlrpadding;
+            color: $blank;
+            border:1px solid rgba($color: $bordercolor, $alpha:0.5);
+            border-radius: 4px;
+            width:100%;
+            height: 100%;
+            font-size: inherit;
+            line-height: 1;
+            outline: none;
+            transition: trans();
+            &.is-active{
+                border-color: $themcolor!important;
+            }
+        }
+        
+    }
+    
+    .ga-input_icon__clear{
+        cursor: pointer;
+        position: absolute;
+        right: 6px;
+        top: 0;
+        height: 100%;
+        line-height: inherit;
+        transform-origin: center;
+        transition: .1s all ease;
+        i{
+            color:$bordercolor;
+            font-size: inherit;
+        }
+    }
+}
