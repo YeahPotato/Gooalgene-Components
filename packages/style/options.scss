@@ -10,12 +10,28 @@ $info:#909399;
 $warning:#e6a23c;
 $danger:#f56c6c;
 $default:#fff;
-
+$iconcolor:#ccc;
+$inputlrpadding:12px;
+$minift : 12px;
+$smallft : 14px;
+$mediumft:16px;
 $notallowed:#ccc;
-
-
+$fsize:14px;
+$font: "Helvetica Neue", Arial, sans-serif;
 // function transition
 $time:0.3s;
 @function trans(){
     @return $time all ease;
 }
+
+// reset font-awesome
+.fa-lg{
+    vertical-align: middle;
+}
+
+
+button,select,textarea,input{
+    font-family: inherit;
+    font-size: inherit;
+}
+
