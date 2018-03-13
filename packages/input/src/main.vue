@@ -52,7 +52,7 @@ export default {
   data() {
     return {
       innerClose: false,
-      isFocus: false
+      isFocus: false,
     };
   },
 

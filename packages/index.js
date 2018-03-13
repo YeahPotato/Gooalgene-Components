@@ -6,6 +6,8 @@ import gaRadio from './radio/index';
 import gaRadioGroup from './radio-group/index';
 import gaCheckbox from './checkbox/index';
 import gaCheckboxGroup from './checkbox-group/index';
+import gaInput from './input/index';
+import gaTextarea from './textarea/index';
 
 import './style/default.scss';
 
@@ -18,7 +20,9 @@ const components = {
     gaRadio,
     gaRadioGroup,
     gaCheckbox,
-    gaCheckboxGroup
+    gaCheckboxGroup,
+    gaInput,
+    gaTextarea
 }
 
 const install = function (Vue, locale) {

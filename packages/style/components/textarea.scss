@@ -1,0 +1,52 @@
+// textarea styles
+
+.ga-textarea{
+    font-size: $fsize;
+    display: inline-block;
+    color:$blank;
+    &.is-disabled{
+        .ga-textarea__label{
+            cursor: not-allowed;
+            color: $notallowed;
+            .ga-textarea__inner{
+                color: $notallowed;
+                cursor: not-allowed;
+                border-color: $notallowed;
+                resize: none;
+                background-color: rgba($color: $notallowed, $alpha: 0.1);
+            }
+        }
+    }
+    .ga-textarea__label{
+        color: inherit;
+        display: inline-block;
+        font-size: inherit;
+        align-items: center;
+        display: flex;
+        i{
+            font-size: inherit;
+        }
+        .ga-textarea__inner___label{
+            display: inline-block;
+            padding: 0 12px;
+            font-size: inherit;
+            line-height: 1;
+            max-width: 8em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .ga-textarea__inner{
+            outline: none;
+            border:1px solid rgba($color: $bordercolor, $alpha: 0.5);
+            border-radius: 4px;
+            padding: 8px;
+            &:hover{
+                border-color: rgba($color: $bordercolor, $alpha: 1.0)
+            }
+            &:focus{
+                border-color: rgba($color: $themcolor, $alpha:1)
+            }
+        }
+    }
+}
