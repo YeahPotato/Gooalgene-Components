@@ -81,7 +81,7 @@
 <br>
 <br>
 
-### **带 icon 的输入框**
+### **字符限制**
 
 <br>
 
@@ -90,12 +90,12 @@
 <br>
 <br>
 <template>
-  <ga-input v-model="text">
+  <ga-textarea v-model="text" :maxLength="160" counter>
     <ga-icon type="search" slot="pre"></ga-icon>
-  </ga-input>
-  <ga-input v-model="text" >
+  </ga-textarea>
+  <ga-textarea v-model="text" >
     <ga-icon type="calendar" slot="append"></ga-icon>
-  </ga-input>
+  </ga-textarea>
 </template>
 
 <br>

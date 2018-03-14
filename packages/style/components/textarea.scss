@@ -26,6 +26,19 @@
         i{
             font-size: inherit;
         }
+        .ga-textarea__area{
+            display: inline-block;
+            position: relative;
+        }
+        .ga-textarea__counter{
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+            font-size: 12px;
+            background-color: $white;
+            border-radius: 2px;
+            padding: 1px;
+        }
         .ga-textarea__inner___label{
             display: inline-block;
             padding: 0 12px;
@@ -37,6 +50,7 @@
             overflow: hidden;
         }
         .ga-textarea__inner{
+            box-sizing: border-box;
             outline: none;
             border:1px solid rgba($color: $bordercolor, $alpha: 0.5);
             border-radius: 4px;
@@ -46,6 +60,9 @@
             }
             &:focus{
                 border-color: rgba($color: $themcolor, $alpha:1)
+            }
+            &.ga-textarea__inner___counter{
+                padding-bottom: 20px;
             }
         }
     }
