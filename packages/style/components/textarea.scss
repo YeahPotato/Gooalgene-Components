@@ -65,5 +65,29 @@
                 padding-bottom: 20px;
             }
         }
+        .ga-textarea__small{
+            height: 70px;
+            textarea{
+                height: 100%;
+                width: 100%;
+                font-size: inherit;
+            }
+        }
+        .ga-textarea__mini{
+            height: 60px;
+            textarea{
+                height: 100%;
+                width: 100%;
+                font-size: inherit;
+            }
+        }
+        .ga-textarea__medium{
+            height: 80px;
+            textarea{
+                height: 100%;
+                width: 100%;
+                font-size: inherit;
+            }
+        }
     }
 }

@@ -11,7 +11,10 @@
           <!-- label attr -->
           <span v-if="label && !$slots.default" class="ga-textarea__inner___label">{{label}}</span>
           <!-- textarea -->
-          <div class="ga-textarea__area">
+          <div :class="[
+            'ga-textarea__area',
+            'ga-textarea__'+size
+          ]">
               <textarea :class="[
                 'ga-textarea__inner',
                 counter?'ga-textarea__inner___counter':''
@@ -44,6 +47,7 @@ export default {
         return this.value;
       },
       set(value) {
+        this.$emit('change');
         this.$emit("input", value);
       }
     }
@@ -52,9 +56,6 @@ export default {
   props: {
     label: {
       type: String
-    },
-    rows: {
-      type: Number
     },
     placeholder: {
       type: String,
@@ -65,7 +66,7 @@ export default {
     },
     rows: {
       type: [Number, String],
-      default:3
+      default: 3
     },
     counter: {
       type: Boolean,
@@ -74,6 +75,10 @@ export default {
     disabled: {
       type: Boolean,
       default: false
+    },
+    size: {
+      type: String,
+      default: "small"
     },
     value: {}
   }
