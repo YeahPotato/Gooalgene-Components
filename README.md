@@ -1,4 +1,4 @@
-# [Gooalgene-UI](http://htmlpreview.github.io/?https://github.com/YeahPotato/Gooalgene-Components/blob/master/dist/index.html)
+# [Gooalgene-UI](https://yeahpotato.github.io/Gooalgene-Components)
 
 > A Vue.js project
 

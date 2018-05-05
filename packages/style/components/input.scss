@@ -44,10 +44,12 @@
             left: $inputlrpadding/2;
             font-size: inherit;
             i{
+                &.fa-lg{
+                    font-size: inherit;
+                }
                 color: $iconcolor;
                 cursor: pointer;
                 opacity: .8;
-                font-size: inherit;
                 &:hover{
                     opacity: 1.0;
                 }
@@ -64,10 +66,12 @@
             right: $inputlrpadding/2;
             font-size: inherit;
             i{
+                &.fa-lg{
+                    font-size: inherit;
+                }
                 color: $iconcolor;
                 cursor: pointer;
                 opacity: .8;
-                font-size: inherit;
                 &:hover{
                     opacity: 1.0;
                 }
@@ -125,8 +129,10 @@
         transform-origin: center;
         transition: .1s all ease;
         i{
+            &.fa-lg{
+                font-size: inherit;
+            }
             color:$bordercolor;
-            font-size: inherit;
         }
     }
 }

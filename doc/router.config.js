@@ -13,6 +13,7 @@ import Radio from './view/zh/radio.md';
 import Checkbox from './view/zh/checkbox.md';
 import Input from './view/zh/input.md';
 import Textarea from './view/zh/textarea.md';
+import Select from './view/zh/select.md';
 
 
 const baseUrl = 'ga-components';
@@ -26,6 +27,7 @@ const routes = [
     { path: `${url}/Checkbox`, component: Checkbox },
     { path: `${url}/Input`, component: Input },
     { path: `${url}/Textarea`, component: Textarea },
+    { path: `${url}/Select`, component: Select },
     { path: '/', redirect: `${url}/Icon` },
     { path: '*', redirect: `${url}/Icon` }
 ]

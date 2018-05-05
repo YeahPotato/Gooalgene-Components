@@ -25,6 +25,7 @@
                 :placeholder="placeholder" 
                 :disabled="disabled" 
                 :type="type" 
+                :readonly="readonly"
                 v-model="innerValue"
             >
         </label>
@@ -52,7 +53,7 @@ export default {
   data() {
     return {
       innerClose: false,
-      isFocus: false,
+      isFocus: false
     };
   },
 
@@ -96,6 +97,10 @@ export default {
     placeholder: {
       type: String,
       default: "请输入内容"
+    },
+    readonly: {
+      type: Boolean,
+      default: false
     },
     value: {}
   },

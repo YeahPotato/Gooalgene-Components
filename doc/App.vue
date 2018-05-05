@@ -35,7 +35,8 @@ export default {
           "Radio 单选框",
           "Checkbox 多选框",
           "Input 输入框",
-          "Textarea 文本域"
+          "Textarea 文本域",
+          "Select 选择器"
         ]
       }
     };

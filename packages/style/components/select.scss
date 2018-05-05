@@ -1,0 +1,44 @@
+// select component styles
+.ga-select{
+    display: inline-block;
+    position: relative;
+    .ga-options{
+        position: absolute;
+        top: 1.6em;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background: $white;
+        font-size: $fsize;
+        display: none;
+        transition: 1s all ease;
+        border-radius: 4px;
+        &.ga-options__mini{
+            top: 26px;
+        }
+        &.ga-options__small{
+            top: 30px;
+        }
+        &.ga-options__medium{
+            top: 34px;
+        }
+        li{
+            line-height: 0;
+            padding-left: 10px;
+            transition: 1s all ease;
+        }
+        &.ga-options__expand{
+            display: block;
+            li{
+                line-height: 2.0;
+            }
+        }
+    }
+    .ga-input.is-append .ga-input--append__icon i.fa.fa-chevron-down{
+        transform-origin: center;
+        transition: trans();
+        &.active{
+            transform:rotate(-180deg);
+        }
+    }
+}

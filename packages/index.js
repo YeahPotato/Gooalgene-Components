@@ -8,6 +8,7 @@ import gaCheckbox from './checkbox/index';
 import gaCheckboxGroup from './checkbox-group/index';
 import gaInput from './input/index';
 import gaTextarea from './textarea/index';
+import gaSelect from './select/index';
 
 import './style/default.scss';
 
@@ -22,7 +23,8 @@ const components = {
     gaCheckbox,
     gaCheckboxGroup,
     gaInput,
-    gaTextarea
+    gaTextarea,
+    gaSelect
 }
 
 const install = function (Vue, locale) {
